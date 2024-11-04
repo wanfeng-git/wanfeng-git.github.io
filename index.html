@@ -5021,8 +5021,8 @@ Version: 2.38.0
 
           </h4>
 
-          <div id="webDiv" class="grid" >
-            <div class="grid__item source__item" style="flex-wrap: nowrap">
+          <div id="webDiv" class="grid grid--1-col product-grid grid--2-col-tablet grid--4-col-desktop negative-margin--small"" >
+            <div class="grid__item source__item" >
               <div class="source-wrapper">
                 <div class="icon_pic">
                   <img src="static/picture/ournature-thesource_1_100x80_crop_center@2x.png" alt="The Source icon">
@@ -5132,11 +5132,9 @@ Version: 2.38.0
           </div>
 
           <style>
-            #webDiv{
-              flex-wrap: nowrap;
-            }
+
             @media screen and(max-width: 762px){
-              #webDiv{
+              .grid{
                 flex-wrap: wrap;
               }
             }
