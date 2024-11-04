@@ -2100,16 +2100,18 @@ Item added to your cart</h2>
 
                   </div>
                 <div class="how-to-buy" style="width: 50%;justify-center: flex-start ">
-                    <img src="/static/pages/static/picture/rightlogo.png" style="height: 110px;width: 384px">
-                    <div style="width: 50%;margin: auto;text-align: left;" >
+                    <div style="display: flex;align-items: flex-start;flex-wrap:wrap"><div style="width: 100%">
+                        <img src="/static/pages/static/picture/rightlogo.png" style="flex-wrap:wrap;height: 110px;width: 384px"></div>
+                    <div class="htmlxx" style="margin: auto;text-align: left;flex-wrap:wrap" >
                         <p >https://mall.id.hk/index-11518548.html</p>
                         <p>https://naturalfactors.tmall.hk/</p>
 
                     </div>
+                    </div>
         <div class="qr2" style="display: inline-flex;margin-top: 24px">
             <div><img class="qrimg2" src="/static/pages/static/picture/资源 1.png" style="transform:scale(0.94)"><p style="font-size:15px">NF 天猫旗舰店</p></div>
-                <div><img class="qrimg2" src="/static/pages/static/picture/资源 2.png" ><p style="font-size:15px">NF 京东旗舰店</p></div>
-                    <div><img class="qrimg2" src="/static/pages/static/picture/资源 3.png" ><p style="font-size:15px">NF 有赞旗舰店</p></div>
+            <div><img class="qrimg2" src="/static/pages/static/picture/资源 2.png" ><p style="font-size:15px">NF 京东旗舰店</p></div>
+            <div><img class="qrimg2" src="/static/pages/static/picture/资源 3.png" ><p style="font-size:15px">NF 有赞旗舰店</p></div>
         </div>
                 </div>
 
@@ -2123,7 +2125,7 @@ Item added to your cart</h2>
             .qrimg2{
                 height: 200px;width: 180px
             }
-            @media screen and (max-width: 1000px){
+            @media screen and (max-width: 1024px){
                 .page-width-desktop{
                     flex-wrap: wrap;
                 }
@@ -2140,6 +2142,9 @@ Item added to your cart</h2>
             @media screen and (min-width:570px){
                 .qr1{
                     display: inline-flex;width: 450px;justify-content:space-between
+                }
+                .htmlxx{
+                    width: 50%;
                 }
 
 
