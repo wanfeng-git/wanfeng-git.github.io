@@ -2762,11 +2762,11 @@ Version: 2.38.0
           <div id="wrapper__slider" style="width:100%; background:transparent; top: 0; left:50%;" class="ls-l"
             data-ls="easingin:easeOutQuint; durationout:800; parallaxlevel:0; position:fixed;">
             <div class="slide_content">
-              <h1 class="home_slide_title">
+              <h1 class="home_slide_title" >
 
-                <a href="/" class=""><img
+                <a class=""><div style="margin-top: -100px"><img
                         srcset="static/picture/twologos.png 1x, " loading="lazy"
-                        class="picc"   alt="Natural Factors Canada"></a>
+                        class="picc"   alt="Natural Factors Canada"></div></a>
               </h1>
 
               <p class="home_slide_text">
@@ -2788,7 +2788,7 @@ Version: 2.38.0
         </div>
         <style>
           .picc{
-            margin: 0 auto;margin-top: 30px;width: 144px;transform:scale(2);
+            margin: 0 auto;margin-top: -60px;width: 144px;transform:scale(2.3);
           }
           /*@media screen and(max-width: 792px){*/
           /*  margin: 0 auto;margin-top: 30px;width: 144px*/
@@ -2799,6 +2799,7 @@ Version: 2.38.0
             flex-direction: column;
             justify-content: center;
             padding: 0 15px;
+            gap: 70px;
           }
 
           @media (min-width: 768px) and (max-width: 1439px) {
