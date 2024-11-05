@@ -2530,16 +2530,29 @@ Version: 2.38.0
     <div class="header-wrapper">
       <header id="header" class="header header--middle-left   header--has-menu">
 
-        <nav class="header__inline-menu">
+        <nav class="">
         <a  class="header__heading-link"><img
                 srcset="static/picture/logonotext.png " loading="lazy" src = "static/picture/logonotext.png"
-                class="header__heading-logo" width="150" height="87"  style="transform: scale(39%);margin-top: -32px" alt="Treal Group"></a>
+                class="header__heading-logo" width="150" height="87"  style="transform: scale(39%);position: relative;left: 20px " alt="Treal Group"></a>
         </nav>
 
         <!-- DROPDOWN MENU  -->
         <style>
           #menu__shop.header__menu-item.header__menu-item.link.link--text {
             display: none !Important;
+          }
+          .header__heading-logo{
+
+          }
+          @media screen and (max-width: 792px){
+            .header__heading-logo{
+              margin-top: -39px;
+            }
+          }
+          @media screen and (min-width: 793px){
+            .header__heading-logo{
+              margin-top: -28px;
+            }
           }
 
           .menu-drawer-container .link {
@@ -2595,46 +2608,46 @@ Version: 2.38.0
     <hr class="hr_header_left">
     <hr class="hr_header_right">
 
-    <cart-notification>
-      <div class="cart-notification-wrapper page-width color-background-1">
-        <div id="cart-notification" class="cart-notification focus-inset" aria-modal="true"
-          aria-label="Item added to your cart" role="dialog" tabindex="-1">
-          <div class="cart-notification__header">
-            <h2 class="cart-notification__heading caption-large"><svg class="icon icon-checkmark color-foreground-text"
-                aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 9" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M11.35.643a.5.5 0 01.006.707l-6.77 6.886a.5.5 0 01-.719-.006L.638 4.845a.5.5 0 11.724-.69l2.872 3.011 6.41-6.517a.5.5 0 01.707-.006h-.001z"
-                  fill="currentColor" />
-              </svg>
-              Item added to your cart</h2>
-            <button type="button" class="cart-notification__close modal__close-button link link--text focus-inset"
-              aria-label="Close">
-              <svg class="icon icon-close" aria-hidden="true" focusable="false">
-                <use href="#icon-close">
-              </svg>
-            </button>
-          </div>
-          <div id="cart-notification-product" class="cart-notification-product"></div>
-          <div class="cart-notification__links">
-            <a href="/cart" id="cart-notification-button" class="button button--secondary button--full-width"></a>
-            <form action="/cart" method="post" id="cart-notification-form">
-              <button class="button button--primary button--full-width" name="checkout">Check out</button>
-            </form>
-            <button type="button" class="link button-label">Continue shopping</button>
-          </div>
-        </div>
-      </div>
-    </cart-notification>
-    <style data-shopify>
-      .cart-notification {
-        display: none;
-      }
-    </style>
-    <style>
-      .header__heading-link img {
-        max-width: 100%;
-      }
-    </style>
+<!--    <cart-notification>-->
+<!--      <div class="cart-notification-wrapper page-width color-background-1">-->
+<!--        <div id="cart-notification" class="cart-notification focus-inset" aria-modal="true"-->
+<!--          aria-label="Item added to your cart" role="dialog" tabindex="-1">-->
+<!--          <div class="cart-notification__header">-->
+<!--            <h2 class="cart-notification__heading caption-large"><svg class="icon icon-checkmark color-foreground-text"-->
+<!--                aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 9" fill="none">-->
+<!--                <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                  d="M11.35.643a.5.5 0 01.006.707l-6.77 6.886a.5.5 0 01-.719-.006L.638 4.845a.5.5 0 11.724-.69l2.872 3.011 6.41-6.517a.5.5 0 01.707-.006h-.001z"-->
+<!--                  fill="currentColor" />-->
+<!--              </svg>-->
+<!--              Item added to your cart</h2>-->
+<!--            <button type="button" class="cart-notification__close modal__close-button link link&#45;&#45;text focus-inset"-->
+<!--              aria-label="Close">-->
+<!--              <svg class="icon icon-close" aria-hidden="true" focusable="false">-->
+<!--                <use href="#icon-close">-->
+<!--              </svg>-->
+<!--            </button>-->
+<!--          </div>-->
+<!--          <div id="cart-notification-product" class="cart-notification-product"></div>-->
+<!--          <div class="cart-notification__links">-->
+<!--            <a href="/cart" id="cart-notification-button" class="button button&#45;&#45;secondary button&#45;&#45;full-width"></a>-->
+<!--            <form action="/cart" method="post" id="cart-notification-form">-->
+<!--              <button class="button button&#45;&#45;primary button&#45;&#45;full-width" name="checkout">Check out</button>-->
+<!--            </form>-->
+<!--            <button type="button" class="link button-label">Continue shopping</button>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </cart-notification>-->
+<!--    <style data-shopify>-->
+<!--      .cart-notification {-->
+<!--        display: none;-->
+<!--      }-->
+<!--    </style>-->
+<!--    <style>-->
+<!--      .header__heading-link img {-->
+<!--        max-width: 100%;-->
+<!--      }-->
+<!--    </style>-->
 
 
 
@@ -2711,8 +2724,8 @@ Version: 2.38.0
             <div class="slide_content">
               <h1 class="home_slide_title" >
 
-                <a class=""><div style=""><img
-                        srcset="static/picture/newlogo.png 1x, " loading="lazy"
+                <a class=""><div class="imgss"><img
+                        srcset="static/picture/newlogo.png "
                         class="picc"   alt="Treal Group"></div></a>
               </h1>
 
@@ -2735,13 +2748,13 @@ Version: 2.38.0
         </div>
         <style>
           .picc{
-            margin: 0 auto;margin-top: -60px;width: 144px;transform:scale(2.3);
+            margin: 0 auto;width: 144px;transform: scale(2.8);
           }
           /*@media screen and(max-width: 792px){*/
           /*  margin: 0 auto;margin-top: 30px;width: 144px*/
           /*}*/
           .slide_content {
-            margin-top: -45px;
+
             height: 100%;
             display: flex;
             flex-direction: column;
@@ -2750,17 +2763,20 @@ Version: 2.38.0
             gap: 10px;
 
           }
+          @media screen and(max-width: 792px){
+            .picc{
 
-          @media (min-width: 768px) and (max-width: 1439px) {
-            .slide_content {
-              padding-top: 40px;
             }
           }
 
+
+
+
           @media (min-width: 768px) and (max-width: 1439px) {
             .slide_content {
               padding-top: 40px;
             }
+
           }
 
           .home_slide_title {
@@ -4971,7 +4987,7 @@ Version: 2.38.0
 
           </h4>
 
-          <div id="webDiv" class="grid grid--1-col product-grid grid--2-col-tablet grid--4-col-desktop negative-margin--small"" >
+          <div id="webDiv" class="grid grid--1-col grid--4-col-desktop negative-margin--small" >
             <div class="grid__item source__item" >
               <div class="source-wrapper">
                 <div class="icon_pic">
