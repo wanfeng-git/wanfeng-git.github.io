@@ -2494,14 +2494,14 @@ Version: 2.38.0
       @media screen and (min-width: 950px) {
         .hr_header_left {
           height: 1px;
-          width: calc(50% - 80px);
+          width: 50%;
           position: absolute;
           top: 87px;
         }
 
         .hr_header_right {
           height: 1px;
-          width: calc(50% - 80px);
+          width: 50%;
           position: absolute;
           top: 87px;
           right: 0;
@@ -2547,6 +2547,7 @@ Version: 2.38.0
           @media screen and (max-width: 792px){
             .header__heading-logo{
               margin-top: -39px;
+              transform: scale(29%) !important;
             }
           }
           @media screen and (min-width: 793px){
@@ -2710,41 +2711,33 @@ Version: 2.38.0
   <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
     <section id="shopify-section-template--15682789015784__16406401034f96f489" class="shopify-section slider--section">
       <link href="static/css/section-image-banner.css" rel="stylesheet" type="text/css" media="all" />
-
-      <div id="slider"
-        style="margin-left: auto; margin-right: auto; top: 0; left: 0; z-index: 0; width: 100vw; height: 75vh!Important;  background-color: #8c8c8c;">
-        <div class="ls-slide"
-          data-ls="bgsize:cover; bgposition:50% 50%; duration:8000; transition2d:1; timeshift:-500; deeplink:home;">
-         <img
+      <div style="margin-left: auto; margin-right: auto; top: 0; left: 0; z-index: 0; width: 100vw; height: 75vh!Important;  background-color: #8c8c8c; background-image: url('static/picture/adobestock_316457746_copy_1500x.png'); background-size: cover; background-position: center; ">
+        <!-- <img
             src="static/picture/adobestock_316457746_copy_1500x.png" loading="lazy"
             alt="Beautiful Factors Farms at sunset" width="" height="" class="ls-bg" allowfullscreen
-            style="object-fit: cover">
-          <div id="wrapper__slider" style="width:100%; background:transparent; top: 0; left:50%;" class="ls-l"
-            data-ls="easingin:easeOutQuint; durationout:800; parallaxlevel:0; position:fixed;">
-            <div class="slide_content">
-              <h1 class="home_slide_title" >
-
-                <a class=""><div class="imgss"><img
-                        src="static/picture/newlogo.png "
-                        class="picc"   alt="Treal Group"></div></a>
-              </h1>
-
-              <p class="home_slide_text">
-
-                秉持关怀初心，TREALGROUP 携手北美最大的有机保健品制造商Natural Factors，为大家带来焕然一新的健康升级与卓越的产品体验。
-
-              </p>
-              <!--              <a-->
-              <!--                href="/pages/our-nature"-->
-              <!--                style="line-height: 3.55; width: 300px; text-align:center; white-space:normal; margin: 29px auto; display: flex; align-self: center;"-->
-              <!--                class="button button&#45;&#45;secondary"-->
-              <!--              >-->
-
-              <!--                  Dig Deeper-->
-
-              <!--              </a>-->
-            </div>
-          </div>
+            style="object-fit: cover"> -->
+        <div class="slide_content">
+          <h1 class="home_slide_title" >
+  
+            <a class=""><div class="imgss"><img
+                    src="static/picture/newlogo.png "
+                    class="picc"   alt="Treal Group"></div></a>
+          </h1>
+  
+          <p class="home_slide_text">
+  
+            秉持关怀初心，TREALGROUP 携手北美最大的有机保健品制造商Natural Factors，为大家带来焕然一新的健康升级与卓越的产品体验。
+  
+          </p>
+          <!--              <a-->
+          <!--                href="/pages/our-nature"-->
+          <!--                style="line-height: 3.55; width: 300px; text-align:center; white-space:normal; margin: 29px auto; display: flex; align-self: center;"-->
+          <!--                class="button button&#45;&#45;secondary"-->
+          <!--              >-->
+  
+          <!--                  Dig Deeper-->
+  
+          <!--              </a>-->
         </div>
         <style>
 
@@ -2761,7 +2754,7 @@ Version: 2.38.0
             gap: 10px;
 
           }
-          @media screen and(max-width: 792px){
+          @media screen and (max-width: 792px){
             .picc{
               transform: scale(2.3);margin: 0 auto;width: 144px;
             }
@@ -2823,8 +2816,6 @@ Version: 2.38.0
           }
         </style>
       </div>
-
-
     </section>
     <section id="shopify-section-template--15682789015784__1639059677e233adae"
       class="shopify-section spaced-section spaced-section--full-width">
