@@ -2725,7 +2725,7 @@ Version: 2.38.0
               <h1 class="home_slide_title" >
 
                 <a class=""><div class="imgss"><img
-                        srcset="static/picture/newlogo.png "
+                        src="static/picture/newlogo.png "
                         class="picc"   alt="Treal Group"></div></a>
               </h1>
 
@@ -2747,9 +2747,7 @@ Version: 2.38.0
           </div>
         </div>
         <style>
-          .picc{
-            margin: 0 auto;width: 144px;transform: scale(2.8);
-          }
+
           /*@media screen and(max-width: 792px){*/
           /*  margin: 0 auto;margin-top: 30px;width: 144px*/
           /*}*/
@@ -2765,6 +2763,16 @@ Version: 2.38.0
           }
           @media screen and(max-width: 792px){
             .picc{
+              transform: scale(2.3);margin: 0 auto;width: 144px;
+            }
+          }
+          @media screen and (min-width: 793px){
+            .picc{
+              transform: scale(4);margin: 0 auto;width: 144px;
+            }
+            .slide_content {
+
+              gap: 50px;
 
             }
           }
